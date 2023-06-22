@@ -68,9 +68,7 @@ function Home() {
             .map((todo) => {
               return (
                 <StTodo key={todo.id}>
-                  <Link to={`/detail/${todo.id}`} todo={todo}>
-                    상세보기
-                  </Link>
+                  <Link to={`/detail/${todo.id}`}>상세보기</Link>
                   <h3>{todo.title}</h3>
                   <p>{todo.detail}</p>
                   <div>
